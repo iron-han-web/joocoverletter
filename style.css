@@ -473,3 +473,45 @@ body.dark-mode .cover-card {
   color: #f0f0f0;
   border: 1px solid #444;
 }
+
+
+/* 네비게이션 반응형 */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    display: block;
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* 섹션 카드 반응형 */
+@media (max-width: 768px) {
+  .card, .skill-card, .cover-card {
+    width: 90% !important;
+    margin: 1rem auto;
+    font-size: 0.95rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile img {
+    width: 120px !important;
+    height: 120px !important;
+  }
+
+  #audio-controls {
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
+  }
+}

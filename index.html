@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>진주를 위한 포트폴리오</title>
+  <title>나의 포트폴리오</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,10 +12,8 @@
 
 
 
-<button onclick="document.getElementById('bg-music').play()">🎶 음악 재생</button>
-
-<audio id="bg-music" loop>
-  <source src="./Lyrics.mp3" type="audio/mpeg">
+<audio autoplay loop id="bg-music" style="display: none;">
+  <source src="Lyrics.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
@@ -34,7 +32,7 @@
 
   <!-- Header -->
   <header class="header">
-    <img src="profile.JPG" alt="정철한 프로필 사진" class="profile-img">
+    <img src="profile.jpg" alt="정철한 프로필 사진" class="profile-img">
     <h1 class="name">정철한</h1>
     <p class="contact">
       Birth: 07.11.1998<br>
