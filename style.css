@@ -478,8 +478,9 @@ body.dark-mode .cover-card {
 /* 네비게이션 반응형 */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .navbar a {
