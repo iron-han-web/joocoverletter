@@ -1,0 +1,475 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+.header {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 2rem 1rem;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 4px solid #ccc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.name {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.navbar {
+  background-color: #333;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  display: block;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #444;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+
+
+
+
+h2 {
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+
+.timeline {
+  position: relative;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid #333;
+}
+
+.timeline-item {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.timeline-date {
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+  color: #555;
+}
+
+.timeline-content {
+  margin-left: 0.5rem;
+}
+
+
+.card {
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.card h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #222;
+}
+.card p {
+  margin: 0.5rem 0 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+
+.fixed-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.skill-card {
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.skill-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.skill-card p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+
+.cover-block {
+  max-width: 900px;
+  margin: 2rem auto;
+  background-color: #fdfdfd;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  line-height: 1.7;
+  color: #333;
+}
+.cover-block h3 {
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+.cover-block p {
+  margin-bottom: 1.5rem;
+  white-space: pre-line;
+}
+
+
+.cover-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+
+/* 다크모드 토글 버튼 */
+#dark-mode-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* 다크모드 설정 */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+
+
+
+
+body.dark-mode .navbar a:hover {
+  background-color: #444;
+}
+
+body.dark-mode .card,
+body.dark-mode .skill-card {
+  background-color: #1e1e1e;
+  border-color: #444;
+  color: #e0e0e0;
+}
+
+/* 페이드인 애니메이션 */
+.fade-in-
+
+
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: none;
+}
+
+
+body.dark-mode 
+
+
+
+
+body.dark-mode .card,
+body.dark-mode .skill-card,
+body.dark-mode .timeline-content {
+  color: #ffffff;
+}
+
+
+.cover-letter-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cover-card {
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#scrollToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #333;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: none;
+  z-index: 1000;
+}
+
+
+section {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  transition: background 0.6s ease;
+}
+
+/* 카드 순차 등장 */
+.fade-in-section .card,
+.fade-in-section .skill-card,
+.fade-in-section .cover-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.visible .card,
+.fade-in-section.visible .skill-card,
+.fade-in-section.visible .cover-card {
+  opacity: 1;
+  transform: none;
+}
+
+.fade-in-section.visible .card:nth-child(1),
+.fade-in-section.visible .skill-card:nth-child(1),
+.fade-in-section.visible .cover-card:nth-child(1) {
+  transition-delay: 0.2s;
+}
+.fade-in-section.visible .card:nth-child(2),
+.fade-in-section.visible .skill-card:nth-child(2),
+.fade-in-section.visible .cover-card:nth-child(2) {
+  transition-delay: 0.4s;
+}
+.fade-in-section.visible .card:nth-child(3),
+.fade-in-section.visible .skill-card:nth-child(3),
+.fade-in-section.visible .cover-card:nth-child(3) {
+  transition-delay: 0.6s;
+}
+
+
+body.dark-mode section,
+body.dark-mode section h2,
+body.dark-mode section h3,
+body.dark-mode section p,
+body.dark-mode .card,
+body.dark-mode .card p,
+body.dark-mode .card h3,
+body.dark-mode .skill-card,
+body.dark-mode .skill-card p,
+body.dark-mode .skill-card h3,
+body.dark-mode .timeline-content {
+  color: #ffffff !important;
+}
+
+
+body.dark-mode {
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background-attachment: fixed;
+  color: #e0e0e0;
+  overflow-x: hidden;
+}
+
+
+
+@keyframes twinkle {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-5px) rotate(180deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+    opacity: 0.7;
+  }
+}
+
+
+/* 별 배경 개수 증가 및 별똥별 효과 추가 */
+
+
+/* 별똥별 (가상의 긴 별 애니메이션) */
+
+
+
+  10% { opacity: 1; }
+  100% { transform: translate(400px, 600px); opacity: 0; }
+}
+
+/* 다크모드 Cover Letter 카드 색상 보정 */
+
+
+
+
+/* 다크모드 네비게이션 상단 헤더 스타일 */
+body.dark-mode .navbar {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body.dark-mode .navbar a {
+  color: #ffffff;
+}
+
+body.dark-mode .navbar a:hover {
+  background-color: #333;
+}
+
+
+
+
+
+
+
+
+body.dark-mode::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 400%;
+  pointer-events: none;
+  background-image: 
+    radial-gradient(1px 1px at 5% 10%, rgba(255,255,255,0.8), transparent),
+    radial-gradient(1px 1px at 10% 20%, rgba(255,255,255,0.6), transparent),
+    radial-gradient(1.5px 1.5px at 15% 80%, rgba(255,255,255,0.5), transparent),
+    radial-gradient(2px 2px at 25% 30%, rgba(255,255,255,0.9), transparent),
+    radial-gradient(1.2px 1.2px at 30% 50%, rgba(255,255,255,0.7), transparent),
+    radial-gradient(2px 2px at 35% 60%, rgba(255,255,255,0.8), transparent),
+    radial-gradient(1px 1px at 40% 40%, rgba(255,255,255,0.5), transparent),
+    radial-gradient(2px 2px at 45% 20%, rgba(255,255,255,0.6), transparent),
+    radial-gradient(1px 1px at 50% 90%, rgba(255,255,255,0.4), transparent),
+    radial-gradient(1.5px 1.5px at 55% 10%, rgba(255,255,255,0.8), transparent),
+    radial-gradient(2px 2px at 60% 70%, rgba(255,255,255,0.6), transparent),
+    radial-gradient(1.2px 1.2px at 65% 80%, rgba(255,255,255,0.4), transparent),
+    radial-gradient(2px 2px at 70% 25%, rgba(255,255,255,0.9), transparent),
+    radial-gradient(1.5px 1.5px at 75% 35%, rgba(255,255,255,0.5), transparent),
+    radial-gradient(1px 1px at 80% 60%, rgba(255,255,255,0.6), transparent),
+    radial-gradient(2px 2px at 85% 15%, rgba(255,255,255,0.7), transparent),
+    radial-gradient(1.2px 1.2px at 90% 45%, rgba(255,255,255,0.4), transparent),
+    radial-gradient(2px 2px at 95% 75%, rgba(255,255,255,0.8), transparent),
+    radial-gradient(1px 1px at 98% 50%, rgba(255,255,255,0.3), transparent),
+    radial-gradient(1.5px 1.5px at 60% 50%, rgba(255,255,255,0.3), transparent);
+  animation: twinkle 12s infinite linear;
+  z-index: -1;
+}
+
+
+body.dark-mode .cover-card {
+  background-color: #141414;
+  color: #f0f0f0;
+  border: 1px solid #444;
+}
